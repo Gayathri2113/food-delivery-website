@@ -1,0 +1,187 @@
+*{
+    margin :0;
+    padding : 0;
+}
+#navbar{
+    display : flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+}
+#logo{
+    margin: 1px 5px;
+}
+#logo img{
+    height: 34px;
+    margin: 9px 6px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1 rem;
+
+}
+#navbar ul li a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:cornsilk;
+}
+#navbar ul li a:hover {
+    color:white;
+    background-color: black;
+}
+#home{
+    display:flex;
+    flex-direction:column;
+    padding: 115px 90px;
+    height: 115px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before {
+    content: "";
+    position: absolute;
+    /* background:url(./down1.jpeg) no-repeat  center center/cover; */
+    background: url(./home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Rowdies', cursive;
+    font-size: 2.33rem;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 0.9 rem;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Rowdies', cursive;
+}
+#services{
+    margin: 0px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding:10px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    background: rgb(235, 232, 232);
+}
+#services .box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#client-section{
+    /* height: 260px; */
+    position: relative;
+    padding: 0;
+    margin: 25px 0px 0px 0px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(./images.jpeg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+    padding: 34px;
+}
+#clients img{
+    height: 120px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.7;
+    background: url(./1.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.2rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1 rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+    background-color: black;
+    color:white;
+    padding: 2px 4px;
+}
+.h-primary{
+    font-size: 2 rem;
+    padding: 15px;
+    /* color: antiquewhite; */
+}
+.h-secondary{
+    font-size: 1.5 rem;
+    padding: 12px;
+}
+.btn{
+    padding:  9px 10px;
+    border: 1px solid white;
+    color:darkgoldenrod;
+    background-color: antiquewhite;
+    margin: 15px;
+    font-size: 1 rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
